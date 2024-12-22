@@ -1,0 +1,33 @@
+// Grid Layout for the Container
+.container {
+    display: grid;
+    gap: $grid-gap;
+    padding: 20px;
+    max-width: $grid-max-width;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax($grid-min-size, 1fr));
+
+    // Blur effect for all non-hovered images
+    &:hover img {
+        filter: blur(3px); // Apply blur to all images
+        opacity: 1;      // Reduce opacity of all images
+    }
+}
+
+// Styling for Individual Images
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: none; // No shadow initially
+    transition: transform $transition-time ease, filter $transition-time ease, opacity $transition-time ease;
+    cursor: pointer;
+
+    // Hover effect for the focused image
+    &:hover {
+        transform: scale(1.02); // Slight zoom
+        box-shadow: 0 0 10px $matrix-green; // Add a small green shadow
+        filter: blur(0);       // Remove blur from the hovered image
+        opacity: 1;            // Restore full opacity for the hovered image
+    }
+}
