@@ -1,0 +1,12 @@
+[
+  {
+    "name": "C'nigorath",
+    "portrait": "assets/characters/C'nigorath1.webp",
+    "background": "assets/characters/C'nigorath2.webp",
+    "description": {
+      "title": "Harbinger of Cthulhu",
+      "place": "The jagged peaks of the Ironspire Range",
+      "traits": "C'nigorath is deadly, emotionless, and the embodiment of ancient horror."
+    }
+  }
+]
