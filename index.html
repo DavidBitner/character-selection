@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Character Selection</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Seamless U-Grid Layout</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>
-        <span>Character Selection</span>
-      </h1>
-      <div class="outer-scratch">
-        <div class="inner-scratch">
-          <div class="background grain"></div>
-        </div>
-      </div>
-    </header>
+    <div class="screen-layout">
+      <div class="top-section">
+        <div class="brick-column left" id="leftContainer"></div>
 
-    <main class="container">
-      <!-- Images will be dynamically added here -->
-    </main>
-    <script src="./js/app.js"></script>
+        <div class="center-stage">
+          <div class="stage-content" id="stageContent">
+            <div class="char-background"></div>
+            <div class="char-figure"></div>
+            <div class="char-info">
+              <h1 id="charName">UNIT-00</h1>
+              <p>STATUS: <span id="charStatus">ACTIVE</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="brick-column right" id="rightContainer"></div>
+      </div>
+
+      <div class="bottom-section" id="bottomContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
